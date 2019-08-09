@@ -35,6 +35,15 @@ class Arqlibras_model extends CI_Model
 		return $resultado;
 	}
 
+	public function get_favoritos()
+	{
+		$stmt = $this->db->prepare("SELECT id,img FROM palavras_cadastradas where ativo = 'T' and favorita='T' order by palavra");
+		$stmt->execute();
+		$resultado = $stmt->fetchall(PDO::FETCH_ASSOC);
+		
+		return $resultado;
+	}
+
 	/*public function consulta($codigo=null)
 	{
 		$stmt = $this->db->prepare("SELECT * FROM empresa_local where id_empresa = :id and ativo = 'T'");

@@ -26,7 +26,7 @@
       loadData();
     });
     function loadDataInApp(value){
-      console.log(value.id);  
+
       var lines = '';
       lines+='<div onclick="get_view_palavra('+value.id+')" class="card card_img" >';
       
@@ -38,6 +38,30 @@
     function loadData(){
       $.ajax({
         url: "<?php echo site_url();?>arqlibras/ajax_get_listar_palavras",
+        dataType:"json",
+        type:"get",
+        cache:false,
+        success:function(data){
+          var lines = '';
+          $.each(data,function(index,value){
+            lines+= loadDataInApp(value);
+          });
+
+          if (lines) {
+            $("#palavras").html('');
+            $("#palavras").append(lines);
+          }else{
+            alert('não há vídeos cadastrados');
+          }
+        },error:function(e){
+          alert('erro');
+        }
+      })
+    }
+
+    function get_favoritos(){
+      $.ajax({
+        url: "<?php echo site_url();?>arqlibras/ajax_get_favoritos",
         dataType:"json",
         type:"get",
         cache:false,
@@ -108,31 +132,12 @@
     <div id="row">
       <div class="btn-group" style="width: 100%" role="group" aria-label="Exemplo básico">
         <button type="button" class="btn btn-secondary btn_select">+ Acessados</button>
-        <button type="button" class="btn btn-secondary btn_select">Favoritos</button>
+        <button type="button" onclick="get_favoritos()" class="btn btn-secondary btn_select">Favoritos</button>
         <button type="button" class="btn btn-secondary btn_select">Recentes</button>
       </div>
       <div id="palavras"></div>
-     <<!-- <div onclick="get_view_palavra(1)" class="card card_img" >
-
-        <img class="card-img-top" style="width: 100%" src="./imagens/arranha_ceu.png" alt="Imagem de capa do card">
-
-      </div>
-
     </div>
-    <div onclick="get_view_palavra(2)" class="card card_img" style="width: 100%;">
-
-      <img class="card-img-top" style="width: 100%" src="./imagens/cupula.png" alt="Imagem de capa do card">
-
-
-    </div>
-    <div  onclick="get_view_palavra(3)" class="card card_img" style="width: 100%;">
-
-      <img style="width: 100%" class="card-img-top" src="./imagens/madeira.png" alt="Imagem de capa do card">
-
-    </div>
-  -->
-</div>
-</div>
+  </div>
 </div><!--Fim container-->
 
 

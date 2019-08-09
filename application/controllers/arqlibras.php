@@ -43,6 +43,20 @@ class Arqlibras extends CI_Controller
 
 		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
 	}
+
+	public function ajax_get_favoritos(){
+
+		$registros=$this->arqlibras_model->get_favoritos();
+
+		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
+	}
 	
+	/*
+	==>cadastrar
+	*/
+	public function cadastrar(){
+		print_r('teste');exit;
+		$this->load->view('cadastrar_palavra.php');
+	}
 	
 }
