@@ -1,0 +1,113 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2018-12-26 09:26:54 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 09:50:36 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 09:52:31 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 09:52:52 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 09:52:53 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 09:54:37 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:10:25 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:11:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:16:56 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:28:00 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:39:46 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:40:35 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:41:27 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:42:08 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:42:08 --> Severity: Warning  --> Use of undefined constant url_base64_encode - assumed 'url_base64_encode' (this will throw an Error in a future version of PHP) C:\wamp64\www\ExameToxicologico\application\views\empresa\listarFuncionariosViews.php 35
+ERROR - 2018-12-26 10:42:12 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:42:12 --> Severity: Warning  --> Use of undefined constant url_base64_encode - assumed 'url_base64_encode' (this will throw an Error in a future version of PHP) C:\wamp64\www\ExameToxicologico\application\views\empresa\listarFuncionariosViews.php 35
+ERROR - 2018-12-26 10:43:47 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:43:47 --> Severity: Warning  --> Use of undefined constant url_base64_encode - assumed 'url_base64_encode' (this will throw an Error in a future version of PHP) C:\wamp64\www\ExameToxicologico\application\views\empresa\listarFuncionariosViews.php 35
+ERROR - 2018-12-26 10:45:20 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:45:20 --> Severity: Warning  --> Use of undefined constant url_base64_encode - assumed 'url_base64_encode' (this will throw an Error in a future version of PHP) C:\wamp64\www\ExameToxicologico\application\views\empresa\listarFuncionariosViews.php 35
+ERROR - 2018-12-26 10:45:51 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:45:51 --> Severity: Warning  --> Use of undefined constant url_base64_encode - assumed 'url_base64_encode' (this will throw an Error in a future version of PHP) C:\wamp64\www\ExameToxicologico\application\views\empresa\listarFuncionariosViews.php 35
+ERROR - 2018-12-26 10:46:24 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:47:40 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:49:52 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:49:53 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:49:55 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:49:55 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:49:56 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:50:03 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:51:07 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:51:07 --> Severity: Warning  --> Use of undefined constant value - assumed 'value' (this will throw an Error in a future version of PHP) C:\wamp64\www\ExameToxicologico\application\views\empresa\listarFuncionariosViews.php 35
+ERROR - 2018-12-26 10:51:07 --> Severity: Warning  --> Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) C:\wamp64\www\ExameToxicologico\application\views\empresa\listarFuncionariosViews.php 35
+ERROR - 2018-12-26 10:52:26 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:54:10 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:57:34 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:59:39 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 10:59:39 --> Severity: Warning  --> Use of undefined constant value - assumed 'value' (this will throw an Error in a future version of PHP) C:\wamp64\www\ExameToxicologico\application\views\empresa\listarFuncionariosViews.php 35
+ERROR - 2018-12-26 10:59:39 --> Severity: Warning  --> Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) C:\wamp64\www\ExameToxicologico\application\views\empresa\listarFuncionariosViews.php 35
+ERROR - 2018-12-26 11:08:08 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 11:08:09 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 11:08:29 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 11:08:52 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 11:08:52 --> Severity: Warning  --> Use of undefined constant value - assumed 'value' (this will throw an Error in a future version of PHP) C:\wamp64\www\ExameToxicologico\application\views\empresa\listarFuncionariosViews.php 40
+ERROR - 2018-12-26 11:08:52 --> Severity: Warning  --> Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) C:\wamp64\www\ExameToxicologico\application\views\empresa\listarFuncionariosViews.php 40
+ERROR - 2018-12-26 11:08:57 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 11:18:23 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 11:18:23 --> Severity: Warning  --> Use of undefined constant value - assumed 'value' (this will throw an Error in a future version of PHP) C:\wamp64\www\ExameToxicologico\application\views\empresa\listarFuncionariosViews.php 40
+ERROR - 2018-12-26 11:18:23 --> Severity: Warning  --> Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) C:\wamp64\www\ExameToxicologico\application\views\empresa\listarFuncionariosViews.php 40
+ERROR - 2018-12-26 11:19:31 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 11:48:23 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 11:55:01 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 11:55:07 --> Severity: Notice  --> Undefined variable: nome C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 44
+ERROR - 2018-12-26 11:55:07 --> Severity: Notice  --> Undefined variable: id C:\wamp64\www\ExameToxicologico\application\views\empresa\cadastro_exame_toxicologico_motorista.php 145
+ERROR - 2018-12-26 11:56:05 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 11:56:10 --> Severity: Notice  --> Undefined variable: nome C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 44
+ERROR - 2018-12-26 11:56:34 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 12:04:42 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 12:05:18 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 12:06:38 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 12:07:28 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 12:11:20 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 12:11:21 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 12:11:44 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 12:12:46 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 12:14:36 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 12:15:17 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 12:15:48 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 12:16:06 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 12:16:26 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 12:24:43 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 94
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 95
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 96
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 97
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 98
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 99
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 100
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 101
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 102
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 103
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 104
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 105
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 106
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 107
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 108
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 13:31:19 --> Severity: Notice  --> Undefined variable: id C:\wamp64\www\ExameToxicologico\application\views\empresa\cadastro_exame_toxicologico_motorista.php 150
+ERROR - 2018-12-26 13:31:25 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 94
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 95
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 96
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 97
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 98
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 99
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 100
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 101
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 102
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 103
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 104
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 105
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 106
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 107
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 108
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 13:31:33 --> Severity: Notice  --> Undefined variable: id C:\wamp64\www\ExameToxicologico\application\views\empresa\cadastro_exame_toxicologico_motorista.php 150
+ERROR - 2018-12-26 13:37:41 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 13:39:35 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 13:40:05 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9
+ERROR - 2018-12-26 13:40:35 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\ExameToxicologico\application\models\empresa\ExameToxicologicoMotorista_model.php 9

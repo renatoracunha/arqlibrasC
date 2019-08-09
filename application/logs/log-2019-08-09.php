@@ -1,0 +1,22 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 09-08-2019 00:10:04 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:26:51 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:27:42 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:27:43 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:28:23 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:28:24 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:28:24 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:28:25 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:28:56 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:29:32 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:29:33 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:29:43 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:29:44 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:29:44 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:31:44 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:31:44 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:34:01 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:34:03 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:34:05 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 00:34:05 --> 404 Page Not Found --> manifest.json
