@@ -73,3 +73,60 @@ ERROR - 09-08-2019 19:30:14 --> 404 Page Not Found --> manifest.json
 ERROR - 09-08-2019 19:32:41 --> 404 Page Not Found --> manifest.json
 ERROR - 09-08-2019 19:32:46 --> 404 Page Not Found --> manifest.json
 ERROR - 09-08-2019 19:32:54 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 19:48:11 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 19:48:14 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:51:56 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:52:12 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:53:04 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:53:17 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:53:27 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:54:08 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:54:49 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:54:52 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:55:00 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:55:07 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:55:11 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:55:15 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:55:27 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:55:50 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:56:11 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:56:12 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:56:22 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:58:08 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 19:59:04 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:07:03 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:07:32 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:09:22 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:11:47 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:11:48 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:12:15 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:12:37 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:13:11 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:27:31 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:28:14 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 20:30:18 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:31:08 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:31:24 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\arqlibrasC\application\models\arqlibras_model.php 51
+ERROR - 09-08-2019 20:31:24 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\arqlibrasC\application\models\arqlibras_model.php 52
+ERROR - 09-08-2019 20:31:24 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\arqlibrasC\application\models\arqlibras_model.php 53
+ERROR - 09-08-2019 20:31:24 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\arqlibrasC\application\models\arqlibras_model.php 54
+ERROR - 09-08-2019 20:31:24 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\arqlibrasC\application\models\arqlibras_model.php 55
+ERROR - 09-08-2019 20:33:17 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\arqlibrasC\application\models\arqlibras_model.php 51
+ERROR - 09-08-2019 20:33:17 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\arqlibrasC\application\models\arqlibras_model.php 52
+ERROR - 09-08-2019 20:33:17 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\arqlibrasC\application\models\arqlibras_model.php 53
+ERROR - 09-08-2019 20:33:17 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\arqlibrasC\application\models\arqlibras_model.php 54
+ERROR - 09-08-2019 20:33:17 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\arqlibrasC\application\models\arqlibras_model.php 55
+ERROR - 09-08-2019 20:34:28 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\arqlibrasC\application\models\arqlibras_model.php 52
+ERROR - 09-08-2019 20:34:28 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\arqlibrasC\application\models\arqlibras_model.php 53
+ERROR - 09-08-2019 20:34:28 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\arqlibrasC\application\models\arqlibras_model.php 54
+ERROR - 09-08-2019 20:34:28 --> Severity: Notice  --> Only variables should be passed by reference C:\wamp64\www\arqlibrasC\application\models\arqlibras_model.php 55
+ERROR - 09-08-2019 20:35:35 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 20:35:50 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 20:36:04 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:36:29 --> 404 Page Not Found --> cadastrar
+ERROR - 09-08-2019 20:37:04 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:37:29 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:38:02 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 20:38:09 --> 404 Page Not Found --> manifest.json
+ERROR - 09-08-2019 20:42:55 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:43:12 --> 404 Page Not Found --> manifest.json

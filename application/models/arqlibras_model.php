@@ -44,6 +44,26 @@ class Arqlibras_model extends CI_Model
 		return $resultado;
 	}
 
+	public function cadastrar_palavra($dados=null){
+		//print_r($dados);exit;
+		$stmt = $this->db->prepare("INSERT INTO palavras_cadastradas (palavra,descricao,exemplo,yt_id,img) VALUES (:PALAVRA,:DESCRICAO,:EXEMPLO,:YT_ID,:IMG)");
+		
+		$stmt->bindValue(':PALAVRA',element('palavra', $dados), PDO::PARAM_STR);
+		$stmt->bindValue(':DESCRICAO',element('descricao', $dados), PDO::PARAM_STR);
+		$stmt->bindValue(':EXEMPLO',element('exemplo', $dados), PDO::PARAM_STR);
+		$stmt->bindValue(':YT_ID',element('yt_id', $dados), PDO::PARAM_STR);
+		$stmt->bindValue(':IMG',element('img', $dados), PDO::PARAM_STR);
+		
+		if($stmt->execute())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}			
+	}
+
 	/*public function consulta($codigo=null)
 	{
 		$stmt = $this->db->prepare("SELECT * FROM empresa_local where id_empresa = :id and ativo = 'T'");

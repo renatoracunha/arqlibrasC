@@ -21,6 +21,24 @@ class Arqlibras extends CI_Controller
 	public function index(){
 		$this->load->view('index.php');
 	}
+
+	public function ajax_get_listar_palavras(){
+
+		$registros=$this->arqlibras_model->get_listar_palavras();
+
+		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
+	}
+
+	public function ajax_get_favoritos(){
+
+		$registros=$this->arqlibras_model->get_favoritos();
+
+		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
+	}
+
+	/*
+	==>palavra
+	*/
 	
 	public function view_palavra($id_palavra){
 		$dados['id_palavra'] = $id_palavra;
@@ -37,25 +55,30 @@ class Arqlibras extends CI_Controller
 		echo json_encode($dados,JSON_UNESCAPED_UNICODE);
 	}
 	
-	public function ajax_get_listar_palavras(){
-
-		$registros=$this->arqlibras_model->get_listar_palavras();
-
-		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
-	}
-
-	public function ajax_get_favoritos(){
-
-		$registros=$this->arqlibras_model->get_favoritos();
-
-		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
-	}
-	
 	/*
 	==>cadastrar
 	*/
+	
+	
 	public function cadastrar(){
-		print_r('teste');exit;
+
+		if ($this->input->post('descricao')) {
+			foreach($this->input->post() as $key => $value ){
+				$registros[$key] = $value;
+			}
+
+			$registros['yt_id'] = 'https://www.youtube.com/embed/'.$registros['yt_id'];
+			//print_r($registros);exit;
+			if($this->arqlibras_model->cadastrar_palavra($registros)){
+				$this->session->set_flashdata('atualizacao_positivo','Salvo com sucesso!');
+				redirect("arqlibras/cadastrar");
+			}else{
+				$this->session->set_flashdata('atualizacao_negativo','Ocorreu um erro!');
+				redirect("arqlibras/cadastrar");;
+			}
+
+		}
+
 		$this->load->view('cadastrar_palavra.php');
 	}
 	

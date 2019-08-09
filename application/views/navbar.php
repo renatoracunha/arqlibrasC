@@ -35,6 +35,8 @@
       </li>
       
     </ul>
-  <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+  <input class="form-control mr-sm-2" type="search" onkeypress="pesquisar_palavra(this.value)" placeholder="Pesquisar" aria-label="Pesquisar">
 </nav>
-
+<script type="text/javascript">
+  
+</script>
