@@ -87,41 +87,46 @@
    .title{
     color: white;
     text-align: center;
-  }
-  .container{
-    text-align: center;
-    align-items: center;
-  }
-  .card_img{
-    margin-top: 3em;
-    width: 100%;
-    background-color: #808080;
-  }
-  .card-img-top{
+    }
+    .container{
+      text-align: center;
+      align-items: center;
+    }
+    .card_img{
+      margin-top: 50px;    
+      width: 100%;
+      background-color: #808080;
+    }
+    .card-img-top{
+      color: black;
+      font-size: 10em;
+    }
+    .card_btn{
+      width: 100%;
+      background-color: #F7819F;
+    }
+    .btn_select{
+    width: 150%;
+    border-color: gray;
     color: black;
-    font-size: 10em;
-  }
-  .card_btn{
-    width: 100%;
-    background-color: #F7819F;
-  }
-  .btn_select{
-   width: 150%;
-   border-color: gray;
-   border-radius: 15%;
- }
- .btn_select:hover{
-  background-color: #424242; 
-  border-bottom: #FF0040;
-  color: white;
-}
-.btn_select:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
+    background-color: white;   
+    }
+    .btn_select:focus {
+      background-color: #A9A9A9;
+      box-shadow: 0 5px #FF0000;
+      transform: translateY(4px);
+    }
+    .btn_select:active {
+      background-color: #A9A9A9;
+      box-shadow: 0 5px #FF0000;
+      transform: translateY(4px);
+    }
+    .btn-group {
+      width: 100%;
+      padding-top: 30px;
+    }
 
-</style>
+  </style>
 </head>
 <body style="background-color: black">
   <div id="header">
@@ -130,10 +135,10 @@
 
   <div id="container">
     <div id="row">
-      <div class="btn-group" style="width: 100%" role="group" aria-label="Exemplo básico">
-        <button type="button" class="btn btn-secondary btn_select">+ Acessados</button>
-        <button type="button" onclick="get_favoritos()" class="btn btn-secondary btn_select">Favoritos</button>
+      <div class="btn-group" role="group" aria-label="Exemplo básico">
         <button type="button" class="btn btn-secondary btn_select">Recentes</button>
+        <button type="button" onclick="get_favoritos()" class="btn btn-secondary btn_select">Populares</button>
+        <button type="button" class="btn btn-secondary btn_select">Favoritos</button>
       </div>
       <div id="palavras"></div>
     </div>
@@ -154,7 +159,7 @@
         } else {
             // Register the service worker
             navigator.serviceWorker
-            .register("/pwabuilder-sw.js")
+            .register("./pwabuilder-sw.js")
             .then(function (reg) {
                 console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
             });
