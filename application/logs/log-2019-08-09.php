@@ -219,3 +219,15 @@ ERROR - 09-08-2019 22:39:46 --> 404 Page Not Found --> imgs
 ERROR - 09-08-2019 22:40:11 --> 404 Page Not Found --> robots.txt
 ERROR - 09-08-2019 22:40:16 --> 404 Page Not Found --> bootstrap.min.css.map
 >>>>>>> 93b80dfd2c9e65034464002de3c6fa8070bd2b35
+ERROR - 09-08-2019 22:51:32 --> 404 Page Not Found --> arqlibrasC
+ERROR - 09-08-2019 22:51:44 --> 404 Page Not Found --> arqlibrasC
+ERROR - 09-08-2019 22:54:22 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 22:56:12 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 23:00:58 --> 404 Page Not Found --> favicon.ico
+ERROR - 09-08-2019 23:01:09 --> 404 Page Not Found --> favicon.ico
+ERROR - 09-08-2019 23:01:11 --> 404 Page Not Found --> favicon.ico
+ERROR - 09-08-2019 23:38:25 --> 404 Page Not Found --> favicon.ico
+ERROR - 09-08-2019 23:40:25 --> 404 Page Not Found --> HNAP1
+ERROR - 09-08-2019 23:47:57 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 23:48:54 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 23:49:51 --> 404 Page Not Found --> arqlibras/manifest.json
