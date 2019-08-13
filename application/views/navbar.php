@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-dark bg-dark">
   <!-- Conteúdo do navbar -->
-   <a class="navbar-brand" href="<?php echo site_url("arqlibras");?>">Arqlibras</a>
+  <a class="navbar-brand" href="<?php echo site_url("arqlibras");?>">Arqlibras</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -35,8 +35,41 @@
       </li>
       
     </ul>
-  <input class="form-control mr-sm-2" type="search" onkeypress="pesquisar_palavra(this.value)" placeholder="Pesquisar" aria-label="Pesquisar">
-</nav>
-<script type="text/javascript">
-  
-</script>
+    <?php 
+
+    if ($_SERVER['REQUEST_URI']=='/arqlibrasC/arqlibras') {
+      //só aparecerá o input pesquisar se tiver na listagem de vídeos;
+      echo'<input class="form-control mr-sm-2" id="pesquisar_palavra" type="search" onkeyup="pesquisar_palavra()" placeholder="Pesquisar" aria-label="Pesquisar">';
+    } ?> ?>
+  </nav>
+
+  <script type="text/javascript">
+
+    function pesquisar_palavra(){
+      nome = $('#pesquisar_palavra').val();
+      $.ajax({
+        url: "<?php echo site_url();?>arqlibras/ajax_get_pesquisar",
+        dataType:"json",
+        type:"get",
+        data:{nome:nome},
+        cache:false,
+        success:function(data){
+          var lines = '';
+          $.each(data,function(index,value){
+            lines+= loadDataInApp(value);
+          });
+
+          if (lines) {
+            $("#palavras").html('');
+            $("#palavras").append(lines);
+          }else{
+            alert('não há vídeos cadastrados');
+          }
+        },
+        error:function(e){
+          alert('erro');
+        }
+      });
+
+    }
+  </script>

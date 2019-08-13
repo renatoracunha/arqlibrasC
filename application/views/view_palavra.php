@@ -19,6 +19,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			loadData();
+			loadFavButton();
 		});
 
 		function loadData(){
@@ -33,11 +34,37 @@
 					$('#definicao_texto').append(data.descricao);
 					$('#uso_texto').append(data.exemplo);
 					$('#palavra').append(data.palavra);
+					if (data.favorita=='T') {
+						$('#div_favButton').append('<button onclick="status_fav(this.value)" value="F" class="btn btn-danger btnFav"></button>');
+					}else{
+						$('#div_favButton').append('<button onclick="status_fav(this.value)" value="T" class="btn btn-primary btnFav"></button>');
+					}
 					//data.yt_id;
 				},error:function(e){
 					alert('erro');
 				}
 			})
+		}
+
+		function status_fav(status){
+			$.ajax({
+				url: "<?php echo site_url();?>arqlibras/ajax_change_fav_status",
+				dataType:"json",
+				cache:false,
+				type:"get",
+				data:{ status:status,id_palavra:<?php echo $id_palavra ?>},
+				success: function(data){
+					$('#div_favButton').html('');
+					if (status != 'T') {
+						$('#div_favButton').append('<button onclick="status_fav(this.value)" value="T" class="btn btn-primary btnFav"></button>');
+					}else{
+						$('#div_favButton').append('<button onclick="status_fav(this.value)" value="F" class="btn btn-danger btnFav"></button>');
+					}
+				},
+				error:function(e){
+					alert('erro');
+				}
+			});
 		}
 	</script>
 	<title>Arqlibras!</title>
@@ -64,6 +91,16 @@
 			color: white;
 			margin-right: 10%;
 			margin-left: 10%;			
+		}
+		.btnFav{
+			position: fixed;
+			float: bottom;
+			bottom: 15px;
+			right: 15px;
+			z-index: 100;
+			border-radius: 50%;
+			font-size: 20px;
+			padding: 15px;
 		}
 	</style>
 </head>
@@ -94,6 +131,9 @@
 			</div>
 
 		</div>
+		<!-- botão favoritar -->
+		<div id="div_favButton"></div>
+		
 	</div><!--Fim container-->
 
 
