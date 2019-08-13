@@ -21,6 +21,26 @@ class Arqlibras_model extends CI_Model
 		
 		return $resultado;
 	}
+
+	public function change_fav_status($status,$id_palavra)
+	{
+		
+		$stmt = $this->db->prepare("UPDATE palavras_cadastradas set favorita=:FAVORITA
+			WHERE id = :ID ");
+		
+		$stmt->bindValue(':ID', $id_palavra,PDO::PARAM_INT);
+		$stmt->bindValue(':FAVORITA', $status, PDO::PARAM_STR);
+		
+		if($stmt->execute())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}	
+	
 	/*
 	//
 	//index
@@ -62,6 +82,18 @@ class Arqlibras_model extends CI_Model
 		{
 			return false;
 		}			
+	}
+
+	public function get_pesquisar($observacao){
+		$stmt = $this->db->prepare("SELECT id,img FROM palavras_cadastradas where ativo = 'T' and palavra like :OBSERVACAO order by palavra");
+		$observacao = '%'.$observacao.'%';
+		$stmt->bindValue(':OBSERVACAO',$observacao, PDO::PARAM_STR);
+
+		$stmt->execute();
+		$resultado = $stmt->fetchall(PDO::FETCH_ASSOC);
+		
+		return $resultado;
+		//print_r($observacao); exit;
 	}
 
 	/*public function consulta($codigo=null)

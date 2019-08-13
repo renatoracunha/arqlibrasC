@@ -219,3 +219,69 @@ ERROR - 09-08-2019 22:39:46 --> 404 Page Not Found --> imgs
 ERROR - 09-08-2019 22:40:11 --> 404 Page Not Found --> robots.txt
 ERROR - 09-08-2019 22:40:16 --> 404 Page Not Found --> bootstrap.min.css.map
 >>>>>>> 93b80dfd2c9e65034464002de3c6fa8070bd2b35
+ERROR - 09-08-2019 20:51:54 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 20:51:55 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 20:51:58 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 20:51:59 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 20:52:01 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 20:52:06 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 20:52:08 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 20:52:09 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 20:52:11 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 20:52:14 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 20:52:25 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 20:52:29 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 20:52:59 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 20:53:04 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 20:53:04 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 09-08-2019 20:53:05 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 20:53:07 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 20:53:12 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 20:53:15 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 20:53:29 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 20:53:39 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 21:38:03 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 21:38:11 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 21:38:14 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 21:39:00 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 21:39:02 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 21:39:03 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 21:39:05 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 21:39:10 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 21:39:12 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 21:39:17 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 21:42:19 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 21:42:32 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 21:46:58 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 23:42:30 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:42:34 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:43:34 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 23:43:37 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:44:08 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:44:16 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 23:44:19 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:44:46 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:44:46 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:44:46 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:44:46 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:44:47 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:44:47 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:44:47 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:44:47 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:44:47 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:44:47 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:44:48 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:44:48 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:44:56 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 23:44:59 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:45:14 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:45:15 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:49:26 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46
+ERROR - 09-08-2019 23:49:45 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 23:51:20 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 23:51:32 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 23:51:35 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 23:51:41 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 23:51:47 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 23:52:17 --> 404 Page Not Found --> arqlibras/ajax_get_pesquisar
+ERROR - 09-08-2019 23:55:03 --> Severity: Notice  --> Undefined variable: id_palavra C:\wamp64\www\arqlibrasC\application\views\navbar.php 46

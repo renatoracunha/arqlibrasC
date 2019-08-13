@@ -42,7 +42,6 @@ class Arqlibras extends CI_Controller
 	
 	public function view_palavra($id_palavra){
 		$dados['id_palavra'] = $id_palavra;
-		//print_r($dados);exit;
 
 		$this->load->view('view_palavra.php', $dados);
 	}
@@ -51,6 +50,15 @@ class Arqlibras extends CI_Controller
 		$id_palavra = $this->input->get('id_palavra');
 
 		$dados=$this->arqlibras_model->get_palavra($id_palavra);
+
+		echo json_encode($dados,JSON_UNESCAPED_UNICODE);
+	}
+	
+	public function ajax_change_fav_status(){
+		$status = $this->input->get('status');
+		$id_palavra = $this->input->get('id_palavra');
+
+		$dados=$this->arqlibras_model->change_fav_status($status,$id_palavra);
 
 		echo json_encode($dados,JSON_UNESCAPED_UNICODE);
 	}
@@ -80,6 +88,18 @@ class Arqlibras extends CI_Controller
 		}
 
 		$this->load->view('cadastrar_palavra.php');
+	}
+
+	/*
+	==>cadastrar
+	*/
+
+	public function ajax_get_pesquisar(){
+		$nome = $this->input->get('nome');
+
+		$registros = $this->arqlibras_model->get_pesquisar($nome);
+
+		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
 	}
 	
 }
