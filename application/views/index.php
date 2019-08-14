@@ -136,9 +136,9 @@
   <div id="container">
     <div id="row">
       <div class="btn-group" role="group" aria-label="Exemplo básico">
-        <button type="button" class="btn btn-secondary btn_select">Recentes</button>
-        <button type="button" onclick="get_favoritos()" class="btn btn-secondary btn_select">Populares</button>
-        <button type="button" class="btn btn-secondary btn_select">Favoritos</button>
+        <button type="button" onclick="loadData()" class="btn btn-secondary btn_select">Recentes</button>
+        <button type="button" onclick="loadData()" class="btn btn-secondary btn_select">Populares</button>
+        <button type="button" onclick="get_favoritos()" class="btn btn-secondary btn_select">Favoritos</button>
       </div>
       <div id="palavras"></div>
     </div>

@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-dark bg-dark">
   <!-- Conteúdo do navbar -->
-  <a class="navbar-brand" href="<?php echo site_url("arqlibras");?>">Arqlibras</a>
+  <a class="navbar-brand" href="<?php echo site_url();?>">Arqlibras</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -9,7 +9,7 @@
   <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="./">Biblioteca <span class="sr-only">(página atual)</span></a>
+        <a class="nav-link" href="<?php echo site_url();?>">Biblioteca <span class="sr-only">(página atual)</span></a>
       </li>
       <!--<li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -37,10 +37,10 @@
     </ul>
     <?php 
 
-    if ($_SERVER['REQUEST_URI']=='/arqlibrasC/arqlibras') {
+    if ($_SERVER['REQUEST_URI']=='/') {
       //só aparecerá o input pesquisar se tiver na listagem de vídeos;
       echo'<input class="form-control mr-sm-2" id="pesquisar_palavra" type="search" onkeyup="pesquisar_palavra()" placeholder="Pesquisar" aria-label="Pesquisar">';
-    } ?> ?>
+    } ?>
   </nav>
 
   <script type="text/javascript">
