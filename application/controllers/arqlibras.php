@@ -36,13 +36,20 @@ class Arqlibras extends CI_Controller
 		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
 	}
 
+	public function ajax_get_palavras_populares(){
+
+		$registros=$this->arqlibras_model->get_palavras_populares();
+
+		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
+	}
+
 	/*
 	==>palavra
 	*/
 	
 	public function view_palavra($id_palavra){
 		$dados['id_palavra'] = $id_palavra;
-
+		$dados['contador']  = $this->arqlibras_model->contar_acesso($id_palavra);
 		$this->load->view('view_palavra.php', $dados);
 	}
 	
@@ -91,7 +98,7 @@ class Arqlibras extends CI_Controller
 	}
 
 	/*
-	==>cadastrar
+	==>Navbar
 	*/
 
 	public function ajax_get_pesquisar(){
@@ -102,4 +109,40 @@ class Arqlibras extends CI_Controller
 		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
 	}
 	
+
+	/*
+	==>Dasabilitar/Editar
+	*/
+
+	public function editar(){
+		$this->load->view('editar_listar_palavras.php');
+	}
+
+	public function ajax_get_editar_listar_palavras_ativas(){
+
+		$registros=$this->arqlibras_model->get_editar_listar_palavras();
+
+		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
+	}
+
+	public function ajax_desabilitar_itens(){
+		$id_item = $this->input->get('id_item');
+		$registros=$this->arqlibras_model->mudar_status_ativo($id_item);
+
+		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
+	}
+
+	public function ajax_get_editar_listar_palavras_inativas(){
+
+		$registros=$this->arqlibras_model->get_editar_listar_palavras('F');
+
+		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
+	}
+
+	public function ajax_habilitar_itens(){
+		$id_item = $this->input->get('id_item');
+		$registros=$this->arqlibras_model->mudar_status_ativo($id_item,'T');
+
+		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
+	}
 }

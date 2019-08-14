@@ -90,6 +90,31 @@
         $('#pesquisar_palavra').toggle();                   
     }    
 
+
+     function get_palavras_populares(){
+      $.ajax({
+        url: "<?php echo site_url();?>arqlibras/ajax_get_palavras_populares",
+        dataType:"json",
+        type:"get",
+        cache:false,
+        success:function(data){
+          var lines = '';
+          $.each(data,function(index,value){
+            lines+= loadDataInApp(value);
+          });
+
+          if (lines) {
+            $("#palavras").html('');
+            $("#palavras").append(lines);
+          }else{
+            alert('não há vídeos cadastrados');
+          }
+        },error:function(e){
+          alert('erro');
+        }
+      })
+    }
+
   </script>
   <style type="text/css">
    .title{
@@ -150,7 +175,7 @@
     <div id="row">
       <div class="btn-group" role="group" aria-label="Exemplo básico">
         <button type="button" onclick="loadData()" class="btn btn-secondary btn_select">Recentes</button>
-        <button type="button" onclick="loadData()" class="btn btn-secondary btn_select">Populares</button>
+        <button type="button" onclick="get_palavras_populares()" class="btn btn-secondary btn_select">Populares</button>
         <button type="button" onclick="get_favoritos()" class="btn btn-secondary btn_select">Favoritos</button>
       </div>
       <div id="palavras"></div>
