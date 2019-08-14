@@ -57,3 +57,9 @@ ERROR - 14-08-2019 02:09:16 --> 404 Page Not Found --> arqlibras/imagens
 ERROR - 14-08-2019 02:09:16 --> 404 Page Not Found --> arqlibras/imagens
 ERROR - 14-08-2019 02:09:16 --> 404 Page Not Found --> arqlibras/imagens
 ERROR - 14-08-2019 02:11:16 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 14-08-2019 03:21:05 --> 404 Page Not Found --> favicon.ico
+ERROR - 14-08-2019 03:23:28 --> 404 Page Not Found --> HNAP1
+ERROR - 14-08-2019 03:24:14 --> 404 Page Not Found --> favicon.ico
+ERROR - 14-08-2019 21:00:07 --> 404 Page Not Found --> favicon.ico
+ERROR - 14-08-2019 21:04:40 --> 404 Page Not Found --> robots.txt
+ERROR - 14-08-2019 21:04:48 --> 404 Page Not Found --> bootstrap.min.css.map
