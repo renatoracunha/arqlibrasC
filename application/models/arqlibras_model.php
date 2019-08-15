@@ -122,6 +122,12 @@ class Arqlibras_model extends CI_Model
 		//print_r($observacao); exit;
 	}
 
+
+	/*
+	//
+	//editar
+	//
+	*/
 	public function get_editar_listar_palavras($status = 'T'){
 		$stmt = $this->db->prepare("SELECT id,palavra,ativo FROM palavras_cadastradas where ativo = '".$status."'");
 
@@ -131,16 +137,33 @@ class Arqlibras_model extends CI_Model
 		return $resultado;
 	}
 
-
-	//do the inactive here!!!
-
-
 	public function mudar_status_ativo($id_item,$status = 'F'){
 		$stmt = $this->db->prepare("UPDATE palavras_cadastradas set ativo='".$status."'
 			WHERE id = :ID ");
 		
 		$stmt->bindValue(':ID', $id_item,PDO::PARAM_INT);
 		
+		if($stmt->execute())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	public function editar_palavra($dados){
+		$stmt = $this->db->prepare("UPDATE palavras_cadastradas set descricao = :DESCRICAO, exemplo = :EXEMPLO,palavra = :PALAVRA ,yt_id = :YT_ID,img = :IMG
+			WHERE id = :ID ");
+		
+		$stmt->bindValue(':DESCRICAO',element('descricao', $dados), PDO::PARAM_STR);
+		$stmt->bindValue(':EXEMPLO',element('exemplo', $dados), PDO::PARAM_STR);
+		$stmt->bindValue(':PALAVRA',element('palavra', $dados), PDO::PARAM_STR);
+		$stmt->bindValue(':YT_ID',element('yt_id', $dados), PDO::PARAM_STR);
+		$stmt->bindValue(':IMG',element('img', $dados), PDO::PARAM_STR);
+		$stmt->bindValue(':ID', element('id', $dados),PDO::PARAM_INT);
+	
 		if($stmt->execute())
 		{
 			return true;

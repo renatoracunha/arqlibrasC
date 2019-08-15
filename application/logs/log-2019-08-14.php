@@ -57,3 +57,5 @@ ERROR - 14-08-2019 02:09:16 --> 404 Page Not Found --> arqlibras/imagens
 ERROR - 14-08-2019 02:09:16 --> 404 Page Not Found --> arqlibras/imagens
 ERROR - 14-08-2019 02:09:16 --> 404 Page Not Found --> arqlibras/imagens
 ERROR - 14-08-2019 02:11:16 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 14-08-2019 23:26:55 --> 404 Page Not Found --> arqlibras/manifest.json
+ERROR - 14-08-2019 23:26:59 --> 404 Page Not Found --> arqlibras/manifest.json

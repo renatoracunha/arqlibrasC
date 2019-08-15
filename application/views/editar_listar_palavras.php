@@ -21,6 +21,10 @@
       loadData();
     });
 
+    function editar(id_item){
+      window.location.href = './editarPalavra/'+id_item; 
+    }
+
     function loadDataInTable(value){
       var lines = '';
       lines+='<tr>';

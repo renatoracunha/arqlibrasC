@@ -10,7 +10,9 @@ class Arqlibras extends CI_Controller
 		$this->load->helper('form');//Carrega o helper de formul?rio
 		$this->load->helper('array');//Carrega o helper array
 		$this->load->helper('encode');
-		
+		$this->load->library('session');//Carrega a biblioteca de sess?o
+		$this->load->library('table');// Carrega a bibioteca de tabela
+
 		$this->load->library('form_validation');//Carrega a biblioteca de valida??o de formul?rio
 		$this->load->model('arqlibras_model');//Carrega o model		
 		//Limpa o cache, não permitindo ao usuário visualizar nenhuma página logo depois de ter feito logout do sistema
@@ -116,6 +118,37 @@ class Arqlibras extends CI_Controller
 
 	public function editar(){
 		$this->load->view('editar_listar_palavras.php');
+	}
+
+	public function editarPalavra($id_palavra){
+		
+		if ($this->input->post('descricao')) {
+			foreach($this->input->post() as $key => $value ){
+				$registros[$key] = $value;
+			}
+
+			$registros['yt_id'] = 'https://www.youtube.com/embed/'.$registros['yt_id'];
+			$registros['id'] = $id_palavra;
+			
+			if($this->arqlibras_model->editar_palavra($registros)){
+				$this->session->set_flashdata('atualizacao_positivo','<p style="font:10em;margin-bottom:5em;">Salvo com sucesso!</p>');
+				redirect("arqlibras/editarPalavra/$id_palavra");
+			}else{
+				$this->session->set_flashdata('atualizacao_negativo','Ocorreu um erro!');
+				redirect("arqlibras/editarPalavra/$id_palavra");
+			}
+
+		}
+
+
+		$dados = $this->arqlibras_model->get_palavra($id_palavra);
+
+		$dados['yt_id'] = explode("/embed/", $dados['yt_id']);
+		$dados['yt_id']=$dados['yt_id'][1];
+		$dados['id_item'] = $id_palavra;
+		//print_r($dados['id']);exit;
+		$this->load->view('editar_palavra.php',$dados);
+		
 	}
 
 	public function ajax_get_editar_listar_palavras_ativas(){
