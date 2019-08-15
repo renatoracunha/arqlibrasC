@@ -198,7 +198,7 @@
         <input placeholder="Informe o nome do arquivo da imagem..." value="<?php echo $img ?>" type="text" name="img" tabindex="5" required autofocus>
       </fieldset>
       <fieldset>
-        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...enviando">Editar</button>
       </fieldset>
 
     </form>

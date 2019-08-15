@@ -82,7 +82,7 @@ class Arqlibras_model extends CI_Model
 
 	public function get_palavras_populares()
 	{
-		$stmt = $this->db->prepare("SELECT id,img FROM palavras_cadastradas where ativo = 'T' order by acessos
+		$stmt = $this->db->prepare("SELECT id,img FROM palavras_cadastradas where ativo = 'T' order by acessos DESC
 			LIMIT 3");
 		$stmt->execute();
 		$resultado = $stmt->fetchall(PDO::FETCH_ASSOC);
