@@ -1,3 +1,5 @@
+<?php $usuario_id = $_GET['id']; ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,7 +21,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			loadData();
-			loadFavButton();
+			//loadFavButton();
 		});
 
 		function loadData(){
@@ -27,17 +29,20 @@
 				url: "<?php echo site_url();?>arqlibras/ajax_get_palavra",
 				dataType:"json",
 				type:"get",
-				data:{id_palavra:<?php echo $id_palavra ?>	},
+				data:{id_palavra:<?php echo $id_palavra ?>,usuario_id:<?php echo $usuario_id ; ?>	},
 				cache:false,
 				success:function(data){
+					//console.log(data);
 					$('#yt_video').append('<iframe width="100%" height="70%" src="'+data.yt_id+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>	</iframe>');
 					$('#definicao_texto').append(data.descricao);
 					$('#uso_texto').append(data.exemplo);
 					$('#palavra').append(data.palavra);
-					if (data.favorita=='T') {
-						$('#div_favButton').append('<button onclick="status_fav(this.value)" value="F" class="btn btn-danger btnFav"></button>');
+
+					if (data.favorita) {
+						
+						$('#div_favButton').append('<button onclick="status_desfav('+data.favorita+')" class="btn btn-danger btnFav"></button>');
 					}else{
-						$('#div_favButton').append('<button onclick="status_fav(this.value)" value="T" class="btn btn-primary btnFav"></button>');
+						$('#div_favButton').append('<button onclick="status_fav()" class="btn btn-primary btnFav"></button>');
 					}
 					//data.yt_id;
 				},error:function(e){
@@ -52,14 +57,28 @@
 				dataType:"json",
 				cache:false,
 				type:"get",
-				data:{ status:status,id_palavra:<?php echo $id_palavra ?>},
+				data:{ usuario_id:<?php echo $usuario_id ; ?>,id_palavra:<?php echo $id_palavra ?>},
 				success: function(data){
 					$('#div_favButton').html('');
-					if (status != 'T') {
-						$('#div_favButton').append('<button onclick="status_fav(this.value)" value="T" class="btn btn-primary btnFav"></button>');
-					}else{
-						$('#div_favButton').append('<button onclick="status_fav(this.value)" value="F" class="btn btn-danger btnFav"></button>');
-					}
+					$('#div_favButton').append('<button onclick="status_desfav('+data+')" class="btn btn-danger btnFav"></button>');
+				},
+				error:function(e){
+					alert('erro');
+				}
+			});
+		}
+
+		function status_desfav(id_palavra_favorita_usuario){
+			$.ajax({
+				url: "<?php echo site_url();?>arqlibras/ajax_change_desfav_status",
+				dataType:"json",
+				cache:false,
+				type:"get",
+				data:{ id_palavra_favorita_usuario:id_palavra_favorita_usuario},
+				success: function(data){
+					$('#div_favButton').html('');
+					$('#div_favButton').append('<button onclick="status_fav()" class="btn btn-primary btnFav"></button>');
+					
 				},
 				error:function(e){
 					alert('erro');

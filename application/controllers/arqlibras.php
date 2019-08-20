@@ -32,8 +32,9 @@ class Arqlibras extends CI_Controller
 	}
 
 	public function ajax_get_favoritos(){
+		$usuario_id = $this->input->get('usuario_id');
 
-		$registros=$this->arqlibras_model->get_favoritos();
+		$registros=$this->arqlibras_model->get_favoritos($usuario_id);
 
 		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
 	}
@@ -41,6 +42,13 @@ class Arqlibras extends CI_Controller
 	public function ajax_get_palavras_populares(){
 
 		$registros=$this->arqlibras_model->get_palavras_populares();
+
+		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
+	}
+
+	public function ajax_get_palavras_recentes(){
+
+		$registros=$this->arqlibras_model->get_palavras_recentes();
 
 		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
 	}
@@ -57,17 +65,27 @@ class Arqlibras extends CI_Controller
 	
 	public function ajax_get_palavra(){
 		$id_palavra = $this->input->get('id_palavra');
+		$usuario_id = $this->input->get('usuario_id');
 
-		$dados=$this->arqlibras_model->get_palavra($id_palavra);
+		$dados=$this->arqlibras_model->get_palavra($id_palavra,$usuario_id);
 
 		echo json_encode($dados,JSON_UNESCAPED_UNICODE);
 	}
 	
 	public function ajax_change_fav_status(){
-		$status = $this->input->get('status');
+		$usuario_id = $this->input->get('usuario_id');
 		$id_palavra = $this->input->get('id_palavra');
 
-		$dados=$this->arqlibras_model->change_fav_status($status,$id_palavra);
+		$dados=$this->arqlibras_model->change_fav_status($usuario_id,$id_palavra);
+
+		echo json_encode($dados,JSON_UNESCAPED_UNICODE);
+	}
+	
+	public function ajax_change_desfav_status(){
+		$id_palavra_favorita_usuario = $this->input->get('id_palavra_favorita_usuario');
+		
+
+		$dados=$this->arqlibras_model->change_desfav_status($id_palavra_favorita_usuario);
 
 		echo json_encode($dados,JSON_UNESCAPED_UNICODE);
 	}
@@ -107,6 +125,15 @@ class Arqlibras extends CI_Controller
 		$nome = $this->input->get('nome');
 
 		$registros = $this->arqlibras_model->get_pesquisar($nome);
+
+		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
+	}
+	
+
+	public function ajax_get_info_usuarios(){
+		$usuario_id = $this->input->get('usuario_id');
+
+		$registros = $this->arqlibras_model->get_info_usuarios($usuario_id);
 
 		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
 	}

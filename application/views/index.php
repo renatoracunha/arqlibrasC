@@ -1,3 +1,5 @@
+
+<?php $usuario_id = $_GET['id']; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -21,7 +23,7 @@
 
   <script>
     function get_view_palavra(id_palavra){
-      window.location.href = './arqlibras/view_palavra/'+id_palavra; 
+      window.location.href = "./arqlibras/view_palavra/"+id_palavra+"?id=<?php echo $usuario_id; ?>"; 
     }
     $(document).ready(function(){
       loadData();
@@ -65,6 +67,7 @@
       $.ajax({
         url: "<?php echo site_url();?>arqlibras/ajax_get_favoritos",
         dataType:"json",
+        data:{usuario_id:<?php echo $usuario_id ; ?>},
         type:"get",
         cache:false,
         success:function(data){
@@ -87,11 +90,11 @@
     }
 
     function abrirPesquisa(){      
-        $('#pesquisar_palavra').toggle();                   
+      $('#pesquisar_palavra').toggle();                   
     }    
 
 
-     function get_palavras_populares(){
+    function get_palavras_populares(){
       $.ajax({
         url: "<?php echo site_url();?>arqlibras/ajax_get_palavras_populares",
         dataType:"json",
@@ -115,56 +118,80 @@
       })
     }
 
-  </script>
-  <style type="text/css">
+    function get_palavras_recentes(){
+     $.ajax({
+      url: "<?php echo site_url();?>arqlibras/ajax_get_palavras_recentes",
+      dataType:"json",
+      type:"get",
+      cache:false,
+      success:function(data){
+        var lines = '';
+        $.each(data,function(index,value){
+          lines+= loadDataInApp(value);
+        });
+
+        if (lines) {
+          $("#palavras").html('');
+          $("#palavras").append(lines);
+        }else{
+          alert('não há vídeos cadastrados');
+        }
+      },error:function(e){
+        alert('erro');
+      }
+    })
+   }
+
+ </script>
+ <style type="text/css">
    .title{
     color: white;
     text-align: center;
-    }
-    #pesquisar_palavra {
-      border-radius: 15px;
-      border: none;
-      text-align: center;
-    }
-    .container{
-      text-align: center;
-      align-items: center;
-    }
-    .card_img{
-      margin-top: 50px;    
-      width: 100%;
-      background-color: #808080;
-    }
-    .card-img-top{
-      color: black;
-      font-size: 10em;
-    }
-    .card_btn{
-      width: 100%;
-      background-color: #F7819F;
-    }
-    .btn_select{
+  }
+  #pesquisar_palavra {
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+  }
+  .container{
+    text-align: center;
+    align-items: center;
+  }
+  .card_img{
+    margin-top: 50px;    
+    width: 100%;
+    background-color: #808080;
+  }
+  .card-img-top{
+    color: black;
+    font-size: 10em;
+  }
+  .card_btn{
+    width: 100%;
+    background-color: #F7819F;
+  }
+  .btn_select{
     width: 150%;
     border-color: gray;
     color: black;
     background-color: white;   
-    }
-    .btn_select:focus {
-      background-color: #A9A9A9;
-      box-shadow: 0 5px #FF0000;
-      transform: translateY(4px);
-    }
-    .btn_select:active {
-      background-color: #A9A9A9;
-      box-shadow: 0 5px #FF0000;
-      transform: translateY(4px);
-    }
-    .btn-group {
-      width: 100%;
-      padding-top: 30px;
-    }
+  }
+  .btn_select:focus {
+    background-color: #A9A9A9;
+    box-shadow: 0 5px #FF0000;
+    transform: translateY(4px);
+  }
+  .btn_select:active {
+    background-color: #A9A9A9;
+    box-shadow: 0 5px #FF0000;
+    transform: translateY(4px);
+  }
+  .btn-group {
+    width: 100%;
+    padding-top: 30px;
+  }
 
-  </style>
+</style>
 </head>
 <body style="background-color: black">
   <div id="header">
@@ -174,7 +201,7 @@
   <div id="container">
     <div id="row">
       <div class="btn-group" role="group" aria-label="Exemplo básico">
-        <button type="button" onclick="loadData()" class="btn btn-secondary btn_select">Recentes</button>
+        <button type="button" onclick="get_palavras_recentes()" class="btn btn-secondary btn_select">Recentes</button>
         <button type="button" onclick="get_palavras_populares()" class="btn btn-secondary btn_select">Populares</button>
         <button type="button" onclick="get_favoritos()" class="btn btn-secondary btn_select">Favoritos</button>
       </div>
@@ -192,17 +219,17 @@
 
     // Check compatibility for the browser we're running this in
     if ("serviceWorker" in navigator) {
-        if (navigator.serviceWorker.controller) {
-            console.log("[PWA Builder] active service worker found, no need to register");
-        } else {
+      if (navigator.serviceWorker.controller) {
+        console.log("[PWA Builder] active service worker found, no need to register");
+      } else {
             // Register the service worker
             navigator.serviceWorker
             .register("./pwabuilder-sw.js")
             .then(function (reg) {
-                console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+              console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
             });
-        }
-    }	
-</script>
-</body>
-</html>
+          }
+        }	
+      </script>
+    </body>
+    </html>
