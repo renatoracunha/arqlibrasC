@@ -166,7 +166,7 @@
 
   </style>
 </head>
-<body style="background-color: black">
+<body style="background-color: #081921">
   <div id="header">
     <?php $this->load->view('navbar.php') ?>
   </div>

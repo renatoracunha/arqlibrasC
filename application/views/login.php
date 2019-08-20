@@ -18,7 +18,7 @@
 		<title>Entrar</title>
 		<style type="text/css">
 			body {
-				background-color: black;
+				background-color: #081921;
 			}
 			#entradas {
 				text-align: center;
@@ -27,7 +27,7 @@
 				margin-left: 25%;
 				margin-right: 25%;
 			}
-			a{
+			a {
 				margin-right: 50%;
 				margin-left: 35%;
 			}
@@ -35,14 +35,14 @@
 	</head>
 	<body>	
 
-	  <div id="container">
+	  <div class="container">
 	  	
 	  	<div id="entradas">
-	  		<form method="get" action="<?php echo base_url('arqlibras/entrar') ?>">
+	  		<form method="post" action="<?php echo base_url('arqlibras/entrar') ?>">
 	  			
-		    	<input class="form-control" type="text" name="login" id="login" placeholder="E-mail"><br>
-					<input class="form-control" type="password" name="senha" id="senha" placeholder="Senha"><br>
-					<input class="form-control" type="submit" name="Entrar" value="Entrar">
+		    	<input class="form-control" type="text" name="email" id="email" placeholder="E-mail" required><br>
+				<input class="form-control" type="password" name="senha" id="senha" placeholder="Senha" required><br>
+				<input class="btn btn-default" type="submit" name="Entrar" value="Entrar">
 
 	  		</form>
 	  		

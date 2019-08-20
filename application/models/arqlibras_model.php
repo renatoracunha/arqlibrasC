@@ -174,4 +174,42 @@ class Arqlibras_model extends CI_Model
 		}
 	}
 
+
+	#
+	#
+	# USUARIOS
+	#
+	#
+	public function cadastrar_usuario($dados=null){
+
+		//print_r($dados);exit;
+		$stmt = $this->db->prepare("INSERT INTO usuario (email, senha) VALUES (:EMAIL, :SENHA)");
+		
+		$stmt->bindValue(':EMAIL',element('email', $dados), PDO::PARAM_STR);
+		$stmt->bindValue(':SENHA',element('senha', $dados), PDO::PARAM_STR);	
+		
+		if($stmt->execute())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	public function entrar($email=null,$senha=null){
+
+		//print_r($dados);exit;
+		$stmt = $this->db->prepare("SELECT id FROM usuario where email = :EMAIL and senha = :SENHA");
+		
+		$stmt->bindValue(':EMAIL',$email, PDO::PARAM_STR);
+		$stmt->bindValue(':SENHA',$senha, PDO::PARAM_STR);	
+		
+		$stmt->execute();
+
+		$resultado = $stmt->fetch(PDO::FETCH_ASSOC);
+
+		return $resultado;	
+	}
 }
