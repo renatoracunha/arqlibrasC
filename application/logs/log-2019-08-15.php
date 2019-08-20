@@ -487,3 +487,37 @@ ERROR - 15-08-2019 21:38:11 --> Severity: Notice  --> Undefined variable: palavr
 ERROR - 15-08-2019 21:38:11 --> Severity: Notice  --> Undefined variable: descricao C:\Users\renat\Documents\arqlibrasC\application\views\editar_palavra.php 189
 ERROR - 15-08-2019 21:38:11 --> Severity: Notice  --> Undefined variable: exemplo C:\Users\renat\Documents\arqlibrasC\application\views\editar_palavra.php 192
 ERROR - 15-08-2019 21:38:11 --> Severity: Notice  --> Undefined variable: img C:\Users\renat\Documents\arqlibrasC\application\views\editar_palavra.php 198
+ERROR - 15-08-2019 22:59:32 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:00:15 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:00:34 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:00:46 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:07:55 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:07:57 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:27 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:27 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:27 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:28 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:28 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:28 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:28 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:28 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:28 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:28 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:29 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:29 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:42 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:42 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:42 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:42 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:42 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:42 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:43 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:43 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:43 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:43 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:43 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:43 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:43 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:08:44 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:09:52 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
+ERROR - 15-08-2019 23:10:14 --> Severity: Warning  --> get_class() expects parameter 1 to be object, null given C:\Users\renat\Documents\arqlibrasC\application\libraries\Session.php 90
