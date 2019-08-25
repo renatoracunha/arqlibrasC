@@ -14,7 +14,7 @@ class Arqlibras_model extends CI_Model
 	
 	public function get_palavra($id_palavra=null,$usuario_id=null)
 	{
-		$stmt = $this->db->prepare("SELECT palavras_cadastradas.id,palavras_cadastradas.yt_id,palavras_cadastradas.palavra,palavras_cadastradas.descricao,palavras_cadastradas.descricao, palavras_cadastradas.exemplo,(select palavra_favorita_usuario.id from palavra_favorita_usuario where palavra_favorita_usuario.palavra_id = :PALAVRA_ID and palavra_favorita_usuario.usuario_id = :USUARIO_ID) as favorita FROM palavras_cadastradas where palavras_cadastradas.id = :PALAVRA_ID");
+		$stmt = $this->db->prepare("SELECT palavras_cadastradas.id,palavras_cadastradas.yt_id,palavras_cadastradas.palavra,palavras_cadastradas.descricao,palavras_cadastradas.descricao,palavras_cadastradas.img, palavras_cadastradas.exemplo,(select palavra_favorita_usuario.id from palavra_favorita_usuario where palavra_favorita_usuario.palavra_id = :PALAVRA_ID and palavra_favorita_usuario.usuario_id = :USUARIO_ID) as favorita FROM palavras_cadastradas where palavras_cadastradas.id = :PALAVRA_ID");
 		$stmt->bindParam(':PALAVRA_ID',$id_palavra, PDO::PARAM_INT);
 		$stmt->bindValue(':USUARIO_ID', $usuario_id,PDO::PARAM_INT);
 		$stmt->execute();

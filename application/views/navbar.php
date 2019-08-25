@@ -1,4 +1,10 @@
-<?php $usuario_id = $_GET['id']; ?>
+<?php 
+  if (empty($_GET['id'])) {
+    $usuario_id=1;
+  }else{
+    $usuario_id = $_GET['id'];
+  }
+?>
 
 
 <nav class="navbar navbar-dark bg-dark ">
@@ -10,7 +16,7 @@
   <a class="navbar-brand" href="<?php echo site_url('?id=').$usuario_id;?>">Arqlibras</a>
   <?php 
 
-  if ($_SERVER['REQUEST_URI']=='/') {
+  if ($_SERVER['REQUEST_URI']=='/?id=1') {
       //só aparecerá o input pesquisar se tiver na listagem de vídeos;
     echo '<input id="pesquisar_palavra" type="search" onkeyup="pesquisar_palavra()" placeholder="Pesquisar" aria-label="Pesquisar">';
     echo '<button type="button" class="btn btn-dark" onclick="abrirPesquisa()"><span class="fas fa-search"></span></button>';

@@ -109,7 +109,7 @@ class Arqlibras extends CI_Controller
 				redirect("arqlibras/cadastrar");
 			}else{
 				$this->session->set_flashdata('atualizacao_negativo','Ocorreu um erro!');
-				redirect("arqlibras/cadastrar");;
+				redirect("arqlibras/cadastrar");
 			}
 
 		}
@@ -173,7 +173,7 @@ class Arqlibras extends CI_Controller
 		$dados['yt_id'] = explode("/embed/", $dados['yt_id']);
 		$dados['yt_id']=$dados['yt_id'][1];
 		$dados['id_item'] = $id_palavra;
-		//print_r($dados['id']);exit;
+		//print_r($dados);exit;
 		$this->load->view('editar_palavra.php',$dados);
 		
 	}
