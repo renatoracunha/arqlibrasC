@@ -21,7 +21,50 @@ class Arqlibras extends CI_Controller
 	}
 	
 	public function index(){
-		$this->load->view('index.php');
+		$this->load->view('login');
+	}
+
+	public function cadastro(){
+		$this->load->view('cadastro_usuario');
+	}
+
+	public function entrar(){
+
+		$email = $this->input->post('email');
+		$senha = $this->input->post('senha');
+
+		$salto = 'geladeiraquebrada'.$senha;
+		$senha = hash('sha256', $salto);
+
+		$resultado = $this->arqlibras_model->entrar($email,$senha);		
+
+		$this->load->view('index');		
+	}
+
+	public function cadastrar_usuario(){
+
+		if ($this->input->post('cadastrar') != null){
+
+			$email = $this->input->post('email');
+			$senha = $this->input->post('senha');
+			$confirmarSenha = $this->input->post('confirmarsenha');
+
+			if(	$senha == $confirmarSenha ){
+
+				$salto = 'geladeiraquebrada'.$senha;
+
+				$senha = hash('sha256', $salto);
+
+				$dados = array('email' => $email, 'senha' => $senha);
+
+				$resultado = $this->arqlibras_model->cadastrar_usuario($dados);
+
+				if($resultado){
+
+					redirect('./');
+				}
+			}			
+		}
 	}
 
 	public function ajax_get_listar_palavras(){
