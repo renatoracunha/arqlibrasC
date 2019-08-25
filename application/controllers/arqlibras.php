@@ -10,7 +10,7 @@ class Arqlibras extends CI_Controller
 		$this->load->helper('form');//Carrega o helper de formul?rio
 		$this->load->helper('array');//Carrega o helper array
 		$this->load->helper('encode');
-		$this->load->library('session');//Carrega a biblioteca de sess?o
+		//$this->load->library('session');//Carrega a biblioteca de sess?o
 		$this->load->library('table');// Carrega a bibioteca de tabela
 
 		$this->load->library('form_validation');//Carrega a biblioteca de valida??o de formul?rio
@@ -18,28 +18,31 @@ class Arqlibras extends CI_Controller
 		//Limpa o cache, não permitindo ao usuário visualizar nenhuma página logo depois de ter feito logout do sistema
 		$this->output->set_header("Cache-Control: no-store, no-cache, must-revalidate, no-transform, max-age=0, post-check=0, pre-check=0");
 		$this->output->set_header("Pragma: no-cache");
+		session_start();
 	}
 	
 	public function index(){
 		$this->load->view('login');
 	}
 
+	public function ajax_get_user_data(){
+		$login = $this->input->get('login');
+		$senha = $this->input->get('senha');
+		$registros=$this->arqlibras_model->get_user_data($login,$senha);
+
+		if (!empty($registros)) {
+			$_SESSION['user_id'] = $registros['id'];
+			//$this->session->set_userdata('user_id',$registros['id']) ;
+			//$this->session->set_userdata('admin',$registros['admin']) ;
+		}
+		
+		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
+	}
+
 	public function cadastro(){
 		$this->load->view('cadastro_usuario');
 	}
 
-	public function entrar(){
-
-		$email = $this->input->post('email');
-		$senha = $this->input->post('senha');
-
-		$salto = 'geladeiraquebrada'.$senha;
-		$senha = hash('sha256', $salto);
-
-		$resultado = $this->arqlibras_model->entrar($email,$senha);		
-
-		$this->load->view('index');		
-	}
 
 	public function cadastrar_usuario(){
 
@@ -65,6 +68,14 @@ class Arqlibras extends CI_Controller
 				}
 			}			
 		}
+	}
+
+	/*
+	==>página principal
+	*/
+
+	public function main_page(){
+		$this->load->view('index.php');
 	}
 
 	public function ajax_get_listar_palavras(){

@@ -1,5 +1,5 @@
 
-<?php $usuario_id = $_GET['id']; ?>
+<?php $usuario_id = $_SESSION['user_id']; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -23,7 +23,7 @@
 
   <script>
     function get_view_palavra(id_palavra){
-      window.location.href = "./arqlibras/view_palavra/"+id_palavra+"?id=<?php echo $usuario_id; ?>"; 
+      window.location.href = "view_palavra/"+id_palavra; 
     }
     $(document).ready(function(){
       loadData();
@@ -34,7 +34,7 @@
       var lines = '';
       lines+='<div onclick="get_view_palavra('+value.id+')" class="card card_img" >';
       
-      lines+='<img class="card-img-top" style="width: 100%" src="./imagens/'+value.img+'" alt="Imagem de capa do card"></div>'; 
+      lines+='<img class="card-img-top" style="width: 100%" src="../imagens/'+value.img+'" alt="Imagem de capa do card"></div>'; 
       
       return lines;
     }

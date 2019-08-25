@@ -1,4 +1,4 @@
-<?php $usuario_id = $_GET['id']; ?>
+<?php $usuario_id = $_SESSION['user_id']; ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">

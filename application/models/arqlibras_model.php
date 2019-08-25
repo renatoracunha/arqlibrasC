@@ -257,10 +257,10 @@ class Arqlibras_model extends CI_Model
 		}
 	}
 
-	public function entrar($email=null,$senha=null){
+	public function get_user_data($email=null,$senha=null){
 
 		//print_r($dados);exit;
-		$stmt = $this->db->prepare("SELECT id FROM usuario where email = :EMAIL and senha = :SENHA");
+		$stmt = $this->db->prepare("SELECT id,admin FROM usuario where email = :EMAIL and senha = :SENHA");
 		
 		$stmt->bindValue(':EMAIL',$email, PDO::PARAM_STR);
 		$stmt->bindValue(':SENHA',$senha, PDO::PARAM_STR);	
@@ -271,4 +271,6 @@ class Arqlibras_model extends CI_Model
 
 		return $resultado;	
 	}
+
+
 }
