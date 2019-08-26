@@ -80,7 +80,7 @@
             $("#palavras").html('');
             $("#palavras").append(lines);
           }else{
-            alert('não há vídeos cadastrados');
+            alert('Você não favoritou nenhuma palavra ainda!');
           }
         },
         error:function(e){

@@ -114,7 +114,7 @@
 		.btnFav{
 			position: fixed;
 			float: bottom;
-			bottom: 15px;
+			bottom: 35px;
 			right: 15px;
 			z-index: 100;
 			border-radius: 50%;
