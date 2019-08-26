@@ -10,7 +10,6 @@ class Arqlibras extends CI_Controller
 		$this->load->helper('form');//Carrega o helper de formul?rio
 		$this->load->helper('array');//Carrega o helper array
 		$this->load->helper('encode');
-		//$this->load->library('session');//Carrega a biblioteca de sess?o
 		$this->load->library('table');// Carrega a bibioteca de tabela
 
 		$this->load->library('form_validation');//Carrega a biblioteca de valida??o de formul?rio
@@ -32,13 +31,11 @@ class Arqlibras extends CI_Controller
 
 		if (!empty($registros)) {
 			$_SESSION['user_id'] = $registros['id'];
-			//$this->session->set_userdata('user_id',$registros['id']) ;
-			//$this->session->set_userdata('admin',$registros['admin']) ;
 		}
 		
 		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
 	}
-
+	//fazer cadastrar e cadastro em uma função só
 	public function cadastro(){
 		$this->load->view('cadastro_usuario');
 	}
@@ -75,6 +72,9 @@ class Arqlibras extends CI_Controller
 	*/
 
 	public function main_page(){
+		if (empty($_SESSION['user_id'])) {
+			redirect("./");
+		}
 		$this->load->view('index.php');
 	}
 
@@ -112,6 +112,9 @@ class Arqlibras extends CI_Controller
 	*/
 	
 	public function view_palavra($id_palavra){
+		if (empty($_SESSION['user_id'])) {
+			redirect("./");
+		}
 		$dados['id_palavra'] = $id_palavra;
 		$dados['contador']  = $this->arqlibras_model->contar_acesso($id_palavra);
 		$this->load->view('view_palavra.php', $dados);
@@ -198,11 +201,16 @@ class Arqlibras extends CI_Controller
 	*/
 
 	public function editar(){
+		if (empty($_SESSION['user_id'])) {
+			redirect("./");
+		}
 		$this->load->view('editar_listar_palavras.php');
 	}
 
 	public function editarPalavra($id_palavra){
-		
+		if (empty($_SESSION['user_id'])) {
+			redirect("./");
+		}
 		if ($this->input->post('descricao')) {
 			foreach($this->input->post() as $key => $value ){
 				$registros[$key] = $value;
