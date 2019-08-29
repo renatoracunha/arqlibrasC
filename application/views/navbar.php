@@ -10,7 +10,7 @@ $usuario_id = $_SESSION['user_id'];
   <button class="btn btn-sm btn-dark" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="<?php echo site_url('arqlibras/main_page');?>">Arqlibras</a>
+  <a id="brand" class="navbar-brand" href="<?php echo site_url('arqlibras/main_page');?>">Arqlibras</a>
   <?php 
 
   if ($_SERVER['REQUEST_URI']=='/arqlibras/main_page') {
