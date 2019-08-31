@@ -95,6 +95,10 @@
 			body {
 				background-color: #1c1c1c;
 			}
+			#btnInstall{
+				margin-top: 10%;
+				
+			}
 			#entradas {
 				text-align: center;
 				margin-bottom: 10%
@@ -108,7 +112,7 @@
 			}
 
 			img{
-				margin-top:35%;
+				margin-top:25%;
 				margin-bottom: 5%;
 				margin-left: 30%;				
 			}
@@ -117,6 +121,13 @@
 	<body>	
 
 		<div class="container">
+
+			<div id="btnInstall" class="alert alert-light alert-dismissible fade show" role="alert">
+			  <button class="btn btn-link" onclick="install()">Adicionar a tela inicial</button>
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			    <span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
 
 			<img src="./imagens/logo.png" alt="logo">
 			
@@ -129,12 +140,7 @@
 			<a class="btn btn-dark" href="<?php echo base_url('arqlibras/cadastro')?>">Cadastre-se</a>
 
 			
-			<div id="btnInstall" class="alert alert-light alert-dismissible fade show" role="alert">
-			  <button class="btn btn-link" onclick="install()">Adicionar a tela inicial</button>
-			  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			    <span aria-hidden="true">&times;</span>
-			  </button>
-			</div>
+			
 		</div>
 	</body>
 </html>
