@@ -4,7 +4,7 @@
 		<!-- Meta tags Obrigatórias -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="manifest" href="./manifest.json">
+		<link rel="manifest" href="https://arqlibrasc.000webhostapp.com/manifest.json">
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="<?php echo base_url('css/bootstrap.css') ?>">
@@ -18,6 +18,8 @@
 		<title>Entrar</title>
 
 		<script type="text/javascript">
+
+			//Instalador PWA
 
 			$(document).ready(function() { 
 			    $('#btnInstall').hide();
@@ -53,10 +55,27 @@
 
 
 			  }
-			}
+			}			
 
+			// This is the "Offline page" service worker
 
-			function verify_login(){
+		    // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+		    // Check compatibility for the browser we're running this in
+		    if ("serviceWorker" in navigator) {
+		      if (navigator.serviceWorker.controller) {
+		        console.log("[PWA Builder] active service worker found, no need to register");
+		      } else {
+		            // Register the service worker
+	            navigator.serviceWorker
+	            .register("https://arqlibrasc.000webhostapp.com/pwabuilder-sw.js")
+	            .then(function (reg) {
+	              console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+	            });
+	          }
+	        }
+
+	        function verify_login(){
 				let login = $('#email').val();
 				let senha = $('#senha').val();
 
@@ -70,7 +89,7 @@
 				if(login==''){
 					$('#email').addClass('is-invalid');
 					$('#email').focus();
-					$('#email').attr('placeholder','Informe um email');
+					$('#email').attr('placeholder','Informe um email/Login');
 					$('#email').css("background-color", "#FFD6D6");
 				}
 				$.ajax({
@@ -90,6 +109,7 @@
 					}
 				})
 			}
+
 		</script>
 		<style type="text/css">
 			body {
@@ -97,7 +117,7 @@
 			}
 			#btnInstall{
 				margin-top: 10%;
-				
+
 			}
 			#entradas {
 				text-align: center;
@@ -112,7 +132,7 @@
 			}
 
 			img{
-				margin-top:25%;
+				margin-top:10%;
 				margin-bottom: 5%;
 				margin-left: 30%;				
 			}
@@ -130,6 +150,7 @@
 			</div>
 
 			<img src="./imagens/logo.png" alt="logo">
+
 			
 			<div id="entradas">
 				<input class="form-control" type="text" name="email" id="email" placeholder="E-mail"><br>

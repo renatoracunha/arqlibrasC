@@ -45,17 +45,20 @@ class Arqlibras extends CI_Controller
 
 		if ($this->input->post('cadastrar') != null){
 
-			$email = $this->input->post('email');
+			/*$email = $this->input->post('email');
 			$senha = $this->input->post('senha');
-			$confirmarSenha = $this->input->post('confirmarsenha');
+			$confirmarSenha = $this->input->post('confirmarsenha');*/
+			foreach($this->input->post() as $key => $value ){
+				$dados[$key] = $value;
+			}
 
-			if(	$senha == $confirmarSenha ){
+			if(	$dados['senha'] == $dados['confirmarsenha'] ){
 
-				$salto = 'geladeiraquebrada'.$senha;
+				/*$salto = 'geladeiraquebrada'.$dados['senha'];
 
-				$senha = hash('sha256', $salto);
+				$dados['senha'] = hash('sha256', $salto);*/
 
-				$dados = array('email' => $email, 'senha' => $senha);
+				//$dados = array('email' => $email, 'senha' => $senha);
 
 				$resultado = $this->arqlibras_model->cadastrar_usuario($dados);
 

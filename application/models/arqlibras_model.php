@@ -242,10 +242,16 @@ class Arqlibras_model extends CI_Model
 	public function cadastrar_usuario($dados=null){
 
 		//print_r($dados);exit;
-		$stmt = $this->db->prepare("INSERT INTO usuario (email, senha) VALUES (:EMAIL, :SENHA)");
+		$stmt = $this->db->prepare("INSERT INTO usuario (nome,email,login,cpf,data_nascimento,telefone, senha,sexo) VALUES (:NOME,:EMAIL,:LOGIN,:CPF,:DATA_NASCIMENTO,:TELEFONE,:SENHA,'F')");
 		
+		$stmt->bindValue(':NOME',element('nome', $dados), PDO::PARAM_STR);
 		$stmt->bindValue(':EMAIL',element('email', $dados), PDO::PARAM_STR);
+		$stmt->bindValue(':LOGIN',element('login', $dados), PDO::PARAM_STR);
+		$stmt->bindValue(':CPF',element('cpf', $dados), PDO::PARAM_STR);
+		$stmt->bindValue(':DATA_NASCIMENTO',element('data_nascimento', $dados), PDO::PARAM_STR);
+		$stmt->bindValue(':TELEFONE',element('telefone', $dados), PDO::PARAM_STR);	
 		$stmt->bindValue(':SENHA',element('senha', $dados), PDO::PARAM_STR);	
+		//$stmt->bindValue(':SEXO',element('sexo', $dados), PDO::PARAM_STR);	
 		
 		if($stmt->execute())
 		{
@@ -260,7 +266,7 @@ class Arqlibras_model extends CI_Model
 	public function get_user_data($email=null,$senha=null){
 
 		//print_r($dados);exit;
-		$stmt = $this->db->prepare("SELECT id,admin FROM usuario where email = :EMAIL and senha = :SENHA");
+		$stmt = $this->db->prepare("SELECT id,admin FROM usuario where (email = :EMAIL or login = :EMAIL) and senha = :SENHA");
 		
 		$stmt->bindValue(':EMAIL',$email, PDO::PARAM_STR);
 		$stmt->bindValue(':SENHA',$senha, PDO::PARAM_STR);	

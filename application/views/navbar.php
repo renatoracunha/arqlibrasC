@@ -29,8 +29,8 @@ $usuario_id = $_SESSION['user_id'];
           Opções de administrador
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php echo site_url("arqlibras/cadastrar?id=").$usuario_id;?>">Cadastrar Palavra</a>
-          <a class="dropdown-item" href="<?php echo site_url("arqlibras/editar?id=").$usuario_id;?>">Editar Palavra</a>
+          <a class="dropdown-item" href="<?php echo site_url("arqlibras/cadastrar")?>">Cadastrar Palavra</a>
+          <a class="dropdown-item" href="<?php echo site_url("arqlibras/editar")?>">Editar Palavra</a>
         </div>
       </li>      
     </ul> 
