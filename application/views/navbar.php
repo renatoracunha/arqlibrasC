@@ -16,7 +16,7 @@ $usuario_id = $_SESSION['user_id'];
   if ($_SERVER['REQUEST_URI']=='/arqlibras/main_page') {
       //só aparecerá o input pesquisar se tiver na listagem de vídeos;
     echo '<input id="pesquisar_palavra" type="search" onkeyup="pesquisar_palavra()" placeholder="Pesquisar" aria-label="Pesquisar">';
-    echo '<button type="button" class="btn btn-dark" onclick="abrirPesquisa()"><span class="fas fa-search"></span></button>';
+    echo '<button type="button" class="btn btn-dark" id="btn_search" onclick="abrirPesquisa()"><span class="fas fa-search"></span></button>';
   } ?>  
 
   <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
@@ -83,6 +83,7 @@ $usuario_id = $_SESSION['user_id'];
       success:function(data){
         if (data.admin !='T') {
           $('#li_adm').hide();
+          $('#btn_search').hide();
         }
       },
       error:function(e){
