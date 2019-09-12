@@ -279,4 +279,42 @@ class Arqlibras_model extends CI_Model
 	}
 
 
+	#
+	#
+	#Admins
+	#
+	#
+
+	public function get_users($status=1,$nome = null){
+		if (empty($nome)) {
+			$param = "admin = '".$status."'";
+		}else{
+			$param = "nome like '%".$nome."%'";
+		}
+		//print_r($param);exit;
+		$stmt = $this->db->prepare("SELECT cpf,nome,id,admin FROM usuario where ".$param." and id != ".$_SESSION['user_id']."");
+
+		$stmt->execute();
+
+		$resultado = $stmt->fetchall(PDO::FETCH_ASSOC);
+
+		return $resultado;	
+	}
+
+	public function set_satus_admin($id_item,$status = 'F'){
+		$stmt = $this->db->prepare("UPDATE usuario set admin='".$status."'
+			WHERE id = :ID ");
+		
+		$stmt->bindValue(':ID', $id_item,PDO::PARAM_INT);
+		
+		if($stmt->execute())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
 }

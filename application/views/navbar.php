@@ -31,6 +31,7 @@ $usuario_id = $_SESSION['user_id'];
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="<?php echo site_url("arqlibras/cadastrar")?>">Cadastrar Palavra</a>
           <a class="dropdown-item" href="<?php echo site_url("arqlibras/editar")?>">Editar Palavra</a>
+          <a class="dropdown-item" href="<?php echo site_url("arqlibras/set_admin")?>">Configurar Admins</a>
         </div>
       </li>      
     </ul> 

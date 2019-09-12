@@ -270,4 +270,38 @@ class Arqlibras extends CI_Controller
 
 		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
 	}
+
+
+	#
+	#
+	#Admins
+	#
+	#
+
+	public function set_admin(){
+		$this->load->view('set_admin.php');
+	}
+
+	public function ajax_get_users(){
+		$status = $this->input->get('status');
+		$registros=$this->arqlibras_model->get_users($status);
+
+		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
+	}
+
+	public function ajax_set_satus_admin(){
+		$status = $this->input->get('status');
+		$id_item = $this->input->get('id_item');
+		$registros=$this->arqlibras_model->set_satus_admin($id_item,$status);
+
+		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
+	}
+
+	public function ajax_get_users_by_name(){
+		$nome = $this->input->get('nome');
+		$status = 'T';
+		$registros=$this->arqlibras_model->get_users($status,$nome);
+
+		echo json_encode($registros,JSON_UNESCAPED_UNICODE);
+	}
 }
